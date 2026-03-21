@@ -1,0 +1,6 @@
+[submodule "fast-multi-agent-tdd"]
+	path = fast-multi-agent-tdd
+	url = https://github.com/linmou/fast-multi-agent-tdd.git
+[submodule "review-with-multi-debate"]
+	path = review-with-multi-debate
+	url = https://github.com/linmou/review-with-multi-debate.git
