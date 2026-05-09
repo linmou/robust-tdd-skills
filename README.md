@@ -1,15 +1,16 @@
 # Robust TDD Skills
 
-Intent: keep closely related TDD and audit skills together in one umbrella repository while preserving each skill as an independent repository.
+Intent: keep closely related TDD, audit, and refactor-monitoring skills together in one umbrella repository while preserving each skill as an independent repository.
 Updated: 2026-05-09
-Commit: a421fd7
+Commit: 48bf2bf
 
 ## Overview
 
-This repository groups two related skills that are commonly used together:
+This repository groups related skills that are commonly used together:
 
 - `fast-multi-agent-tdd/`: strict Red-Green-Refactor workflow orchestration with monitor discipline
 - `review-with-multi-debate/`: structured audit workflow for phase claims and artifacts
+- `code-smell-monitor/`: scoped objective code-quality feedback for refactor planning and verification
 
 The top-level repository exists to make the skill set easier to clone, inspect, and manage as one unit. The child skills remain independent repositories and are tracked here as git submodules.
 
@@ -17,6 +18,7 @@ The top-level repository exists to make the skill set easier to clone, inspect, 
 
 ```text
 robust-tdd-skills/
+  code-smell-monitor/
   fast-multi-agent-tdd/
   review-with-multi-debate/
 ```
@@ -50,6 +52,7 @@ git submodule update --remote --merge
 
 ## Skill Locations
 
+- `code-smell-monitor` upstream: `https://github.com/linmou/code-smell-monitor.git`
 - `fast-multi-agent-tdd` upstream: `https://github.com/linmou/fast-multi-agent-tdd.git`
 - `review-with-multi-debate` upstream: `https://github.com/linmou/review-with-multi-debate.git`
 
