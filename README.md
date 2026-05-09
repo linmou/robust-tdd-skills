@@ -1,8 +1,8 @@
 # Robust TDD Skills
 
 Intent: keep closely related TDD and audit skills together in one umbrella repository while preserving each skill as an independent repository.
-Updated: 2026-03-21
-Commit: 062cbe1
+Updated: 2026-05-09
+Commit: a421fd7
 
 ## Overview
 
