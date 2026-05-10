@@ -2,7 +2,7 @@
 
 Intent: keep closely related TDD, audit, and code-quality monitoring skills together in one umbrella repository while preserving each skill as an independent repository.
 Updated: 2026-05-10
-Commit: a682ac5
+Commit: 1d7e5e3
 
 ## Overview
 
