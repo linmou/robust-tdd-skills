@@ -1,8 +1,8 @@
 # Robust TDD Skills
 
 Intent: keep closely related TDD, audit, and code-quality monitoring skills together in one umbrella repository while preserving each skill as an independent repository.
-Updated: 2026-05-10
-Commit: 1d7e5e3
+Updated: 2026-07-01
+Commit: pending local change from c3baf2b
 
 ## Overview
 
@@ -29,6 +29,10 @@ robust-tdd-skills/
 - Each child skill keeps its own git history, remote, and release cadence.
 - Changes inside a child skill must be committed in that child repo first.
 - The umbrella repo should then commit the updated submodule pointer.
+- `review-with-multi-debate` tracks upstream `main` through `.gitmodules`.
+- `.github/workflows/sync-review-with-multi-debate.yml` runs hourly and on manual dispatch to update and commit the `review-with-multi-debate` pointer when upstream `main` moves.
+
+Submodules are still exact commit pins. The workflow keeps the pin current; git does not make a submodule float automatically inside an already committed parent revision.
 
 ## Clone And Update
 
@@ -48,6 +52,12 @@ To pull the latest child skill changes after they are pushed upstream:
 
 ```bash
 git submodule update --remote --merge
+```
+
+To update only `review-with-multi-debate` locally:
+
+```bash
+scripts/sync_review_with_multi_debate_submodule.sh
 ```
 
 ## Skill Locations
